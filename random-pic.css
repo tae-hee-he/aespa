@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100..900&display=swap');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: cotillion;
+    src: url(./Cotillion_Regular/COTILLIO.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: sf_quart;
+    src: url(./SF_Quartzite/SFQuartzite-Oblique.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#space{
+    margin: 30px;
+    height: 770px;
+    position: relative;
+    border:1px solid #000;
+
+    overflow-x: hidden;
+  
+}
+.sub-text>p{
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    left: 79px;
+}
+.sub-text>div>img{
+    width: 170px;
+    height: 100px;
+    bottom: 10px;
+    left: 20px;
+    position: absolute;
+    font-size: 17px;
+}
+.sub-text2{
+    writing-mode: vertical-rl;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    font-size: 17px;
+}
+.header{
+    font-family: 'GmarketSansMedium';
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+    
+}
+@keyframes colors{
+    0%{
+        background-color: rgb(135, 225, 255);   
+    }
+    50%{
+        background-color:rgb(84, 125, 190);
+    }
+    100%{
+        background-color:   rgb(135, 225, 255);   
+    }
+}
+
+.typing-txt{display: none;}
+.typeing-txt ul{list-style:none;}
+.type{
+    margin-top: 190px;
+    display: flex;
+    justify-content: center;
+
+}
+.typing {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+  font-size: 130px;
+
+} 
+
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
+}
+
+.spinned{
+   width: 500px;
+   padding-top: 250px;
+   margin: 0 auto;
+    overflow: hidden;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+}
+.move{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.edit{
+    text-align: center;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+}
+.head>h1{
+    display: inline-block;
+    padding: 20px 0px 20px 0px;
+    justify-content: center;
+    border-top: solid 1px #000;
+}
+
+  .disco{
+    padding: 10px 0px;
+    contain: paint;
+    height: 500vh; 
+  
+/*가로로 스크롤 될 만큼을 높이로 부여*/
+  }
+  .scroll-box{
+   z-index: 1;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: sticky;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+.album{
+    display: flex;
+
+}
+.album>div{
+    border-top: 1px solid #000;
+    border-left:  1px solid #000;    
+    border-bottom: 1px solid #000;
+}
+.album>div>p{
+
+    font-family: 'Pretendard-Regular';
+    padding: 15px 0px 15px 10px;
+    font-size: 19px;
+}
+.album>div>img{
+    border-top: 1px solid #000;
+}
+.member{
+    position: relative;
+    width: 100%;
+    height: 725px;
+    background-image: url(img/meme.jpeg);
+    background-size: cover;
+    background-position: 0px -700px;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+}
+.name{
+    border: 1px solid black;
+    display: flex;
+    margin:  0;
+    justify-content: space-around;
+
+}
+.name>li{ 
+    font-family: 'Pretendard-Regular';
+    font-size: 30px;
+    padding: 15px 0px;
+   color: #111;
+    list-style-type: none;
+    cursor: pointer;
+}
+.name>li:hover{
+    color: #888;
+}
+.mem-img{
+    position: absolute;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+}
+#karinaimg, #winterimg, #ningningimg, #giselleimg{
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    width: 1200px;
+    top:0;
+    left:0; 
+    background-image: linear-gradient(to top, rgb(249, 249, 245)80%, rgb(255, 68, 102) 15%);
+    border-radius: 25px;
+    backdrop-filter: blur(50px);
+
+}
+.insta{
+    width: 100px;
+    height: 100px;
+    color: black;
+}
+.ning-fig, .karina-fig,.giselle-fig,.winter-fig{
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-end;
+    width: 450px;
+    margin: 30px;
+    height: 580px;
+}
+.ning-fig{
+    animation-name: figure;
+    border: 1px solid #111;
+}
+.karina-fig{
+    animation-name: figure2;
+    border: 1px solid #111;
+}
+.giselle-fig{
+    animation-name: figure3;
+    border: 1px solid #111;
+}
+.winter-fig{
+    animation-name: figure4;
+    border: 1px solid #111;
+}
+.fig2{
+    padding-left: 30px;
+}
+.fig2>p{
+    margin: 10px 0px 50px 0px;
+    
+}
+.fig2>p>a{
+    text-decoration: none;
+    font-family: cotillion;
+    font-size:100px;
+
+    color: rgb(255, 165, 182);
+
+}
+.fig2>p:hover>a{ 
+    color: rgb(255, 28, 69);
+}
+
+.right{
+    padding: 15px 0px;
+    display: flex;
+    list-style-type: none;
+}
+.right>li{
+    font-size: 28px;
+    font-family: "Nanum Myeongjo", serif;
+    width: 150px;
+    color: #222;
+}
+.right>li>p{
+    font-size: 15px;
+    color: #111;
+    margin: 0;
+}
+.right>li:last-child{
+    width: 210px;
+    padding-left: 150px;
+}
+
+.eye{
+    top:56%;
+    left: 42%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+.eye>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes figure{
+    0%{
+     background-image: url(img/ning-1.jpeg); 
+     background-size: cover;
+    }
+    25%{
+        background-image: url(img/ning-2.jpeg); 
+        background-size: cover;
+    }
+    50%{
+        background-image: url(img/ning-3.jpeg); 
+        background-size: cover;
+    }
+    75%{
+        background-image: url(img/ning-4.jpeg); 
+        background-size: cover;
+    }
+    
+}
+@keyframes figure2{
+    0%{
+     background-image: url(img/karina-1.jpeg); 
+     background-size: cover;
+    }
+    25%{
+        background-image: url(img/karina-2.jpeg); 
+        background-size: cover;
+    }
+    50%{
+        background-image: url(img/karina-3.jpeg); 
+        background-size: cover;
+    }
+    75%{
+        background-image: url(img/karina4.jpeg); 
+        background-size: cover;
+    }
+    
+}
+@keyframes figure3{
+    0%{
+     background-image: url(img/gigi-1.jpeg); 
+     background-size: cover;
+    }
+    25%{
+        background-image: url(img/gigi-2.jpeg); 
+        background-size: cover;
+    }
+    50%{
+        background-image: url(img/gigi-3.jpeg); 
+        background-size: cover;
+    }
+    75%{
+        background-image: url(img/gigi-4.jpeg); 
+        background-size: cover;
+    }
+    
+}
+@keyframes figure4{
+    0%{
+     background-image: url(img/win-1.jpeg); 
+     background-size: cover;
+    }
+    25%{
+        background-image: url(img/win-2.jpeg); 
+        background-size: cover;
+    }
+    50%{
+        background-image: url(img/win-3.jpeg); 
+        background-size: cover;
+    }
+    75%{
+        background-image: url(img/win-4.jpeg); 
+        background-size: cover;
+    }
+    
+}
+
+.youtube{
+    margin-top: 70px;
+    display: flex;
+}
+
+.text-container{
+    padding: 50px 0;
+}
+
+.flow-text{
+    display: flex;
+    overflow: hidden;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 100px;
+    font-family: sf_quart;
+}
+.flow-wrap{
+    animation: textLoop 10s linear infinite;
+    padding-right: 3.4881vw;
+}
+  
+  @keyframes textLoop {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+  .flow-text:hover {
+    color: #606060;
+  }
+  .flow-text:hover .flow-wrap {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+footer{
+padding: 50px 0px 20px 0px;
+}
+footer>ul{
+    padding-top: 10px;
+    border-top: #222 1px solid;
+    justify-content: center;
+    display: flex;
+}
+footer>ul>li{
+    padding: 10px;
+    list-style-type: none;
+}
+footer>.logo{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+footer>.logo>img{
+    padding-right: 30px;
+    width: 80px;
+    height: 70px;
+}
+footer>p{
+    text-align: right;
+    padding-right: 30px;
+} 
